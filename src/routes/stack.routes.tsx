@@ -2,11 +2,12 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import { Welcome } from '../pages/Welcome';
-import UserIdentification from '../pages/UserIdentification';
+import { UserIdentification } from '../pages/UserIdentification';
+import { Confirmation } from '../pages/Confirmation';
+import { EmotionSelect } from '../pages/EmotionSelect';
+import { EmotionSave } from '../pages/EmotionSave';
 
 import colors from '../styles/colors';
-import { Confirmation } from '../pages/Confirmation';
-import EmotionSelect from '../pages/EmotionSelect';
 
 const stackRoutes = createStackNavigator();
 
@@ -38,6 +39,11 @@ const AppStackRoutes: React.FC = () => {
             <stackRoutes.Screen 
                 name="EmotionSelect"
                 component={EmotionSelect}
+            />
+
+            <stackRoutes.Screen 
+                name="EmotionSave"
+                component={EmotionSave}
             />
 
         </stackRoutes.Navigator>

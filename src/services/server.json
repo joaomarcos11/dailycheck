@@ -1,0 +1,145 @@
+{
+    "emotions_week_day": [
+      {"key": "monday", "title": "Segunda-feira"},
+      {"key": "tuesday", "title": "Terça-feira"},
+      {"key": "wednesday", "title": "Quarta-feira"},
+      {"key": "thursday", "title": "Quinta-feira"},
+      {"key": "friday", "title": "Sexta-feira"},
+      {"key": "saturday", "title": "Sábado"},
+      {"key": "sunday", "title": "Domingo"}
+    ],
+
+    "emotions": [
+      {
+        "id": 1,
+        "name": "Esperançoso(a)"
+      },
+      {
+        "id": 2,
+        "name": "Contente"
+      },
+      {
+        "id": 3,
+        "name": "Distraído(a)"
+      },
+      {
+        "id": 4,
+        "name": "Cansado(a)"
+      },
+      {
+        "id": 5,
+        "name": "Calmo(a)"
+      },
+      {
+        "id": 6,
+        "name": "Confuso(a)"
+      },
+      {
+        "id": 7,
+        "name": "Entediado(a)"
+      },
+      {
+        "id": 8,
+        "name": "Estressado(a)"
+      }
+    ],
+    
+    "activities_frequencies": [
+      {"key": "day", "title": "Todos os dias"},
+      {"key": "week", "title": "A cada semana"}
+    ],
+  
+    "activities_period": [
+      {"key": "morning", "title": "Manhã"},
+      {"key": "afternoon", "title": "Tarde"},
+      {"key": "night", "title": "Noite"}
+    ],
+  
+    "activities": [
+      {
+        "id": 1,
+        "name": "Lavar a louça",
+        "about": "Lavar pratos, talheres, panelas e utensílios.",
+        "activity_tips": "Além de deixar a louça limpa, essa atividade contribui para concentração e relaxamento mental",
+        "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/1.svg",
+        "period": ["morning", "night"],
+        "frequency": {
+          "times": 2,
+          "repeat_every": "day"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Regar as plantas",
+        "about": "Colocar água na areia das plantas.",
+        "activity_tips": "As plantas precisam de água e sol todos os dias para se mantarem saudáveis.",
+        "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/1.svg",
+        "period": ["morning"],
+        "frequency": {
+          "times": 1,
+          "repeat_every": "day"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Meditar",
+        "about": "Praticar pelo menos 5 minutos de meditação",
+        "activity_tips": "A meditação contribui de diversas formas à saúde, diminuindo o estresse e ajudando na concentração.",
+        "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/1.svg",
+        "period": ["morning", "afternoon", "night"],
+        "frequency": {
+          "times": 1,
+          "repeat_every": "day"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Colocar comida no aquário",
+        "about": "Os peixes precisam se alimentar",
+        "activity_tips": "Colocar comida dia sim e dia não já garante a alimentação dos peixinhos",
+        "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/1.svg",
+        "period": ["night"],
+        "frequency": {
+          "times": 3,
+          "repeat_every": "week"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Colocar lixo fora",
+        "about": "Deixar lixo fora para coleta",
+        "activity_tips": "Separar lixo orgânico do reciclável e deixar fora todos os dias",
+        "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/1.svg",
+        "period": ["morning", "afternoon"],
+        "frequency": {
+          "times": 4,
+          "repeat_every": "week"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Passear com o cachorro",
+        "about": "Sair com o cachorro todos os dias para que o pet possa fazer suas necessidades e ficar menos estrassado.",
+        "activity_tips": "Sempre levar coleira e saco para recolher fezes do pet",
+        "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/1.svg",
+        "period": ["morning", "night"],
+        "frequency": {
+          "times": 2,
+          "repeat_every": "day"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Varrer a casa",
+        "about": "Varrer pelo menos um comôdo todo o dia",
+        "activity_tips": "Não deixar acumular sujeira na casa é o melhor forma de deixar a casa limpa",
+        "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/1.svg",
+        "period": ["morning", "afternoon", "night"],
+        "frequency": {
+          "times": 1,
+          "repeat_every": "day"
+        }
+      }
+    ]
+  }
+  
