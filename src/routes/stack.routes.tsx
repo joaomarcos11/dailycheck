@@ -5,7 +5,7 @@ import { Welcome } from '../pages/Welcome';
 import { UserIdentification } from '../pages/UserIdentification';
 import { Confirmation } from '../pages/Confirmation';
 import { EmotionSelect } from '../pages/EmotionSelect';
-import { EmotionSave } from '../pages/EmotionSave';
+import { ActivitySelect } from '../pages/ActivitySelect';
 
 import colors from '../styles/colors';
 
@@ -42,8 +42,8 @@ const AppStackRoutes: React.FC = () => {
             />
 
             <stackRoutes.Screen 
-                name="EmotionSave"
-                component={EmotionSave}
+                name="ActivitySelect"
+                component={ActivitySelect}
             />
 
         </stackRoutes.Navigator>

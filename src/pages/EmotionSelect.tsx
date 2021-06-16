@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigation } from '@react-navigation/core';
-import { View, SafeAreaView, FlatList, StyleSheet, Text } from 'react-native';
+import { Alert, View, SafeAreaView, FlatList, StyleSheet, Text } from 'react-native';
 import { EmotionCard } from '../components/EmotionCard';
-import { Header } from '../components/Header';
-
-import { EmotionProps } from '../libs/storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import api from '../services/api';
 
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
+
+import { Header } from '../components/Header';
 import { Load } from '../components/Load';
+
+interface EmotionProps {
+    id: string;
+    name: string;
+}
 
 export function EmotionSelect() {
     const [emotion, setEmotion] = useState<EmotionProps[]>();
@@ -32,8 +37,19 @@ export function EmotionSelect() {
         }
     }
 
-    function handleEmotionSelect(emotion : EmotionProps) {
-        navigation.navigate('EmotionSave', { emotion });
+    async function handleEmotionSelect(emotionName : string) {
+        try {
+            await AsyncStorage.setItem('@dailycheck:emotion', emotionName);
+            navigation.navigate('Confirmation', {
+                title: 'Beleza',
+                subtitle: 'Agora vamos ver que tarefas você vai fazer hoje',
+                buttonTitle: 'Avançar',
+                icon: 'hug',
+                nextScreen: 'ActivitySelect'
+            });
+        } catch {
+            return Alert.alert('Não foi possível guardar como você está se sentindo😢');
+        }
     }
 
     useEffect(() => {
@@ -63,7 +79,7 @@ export function EmotionSelect() {
                     renderItem={({ item }) => (
                         <EmotionCard
                             data={item}
-                            onPress={() => handleEmotionSelect(item)}
+                            onPress={() => handleEmotionSelect(item.name)}
                         />
                     )}
                     showsVerticalScrollIndicator={false}

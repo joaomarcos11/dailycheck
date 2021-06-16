@@ -48,7 +48,7 @@ export function UserIdentification() {
             await AsyncStorage.setItem('@dailycheck:user', name);
             navigation.navigate('Confirmation', {
                 title: 'Prontinho',
-                subtitle: 'Agora vamos começar a cuidar das suas atividades diárias com muito cuidado.',
+                subtitle: 'Agora vamos conferir como você está se sentindo hoje',
                 buttonTitle: 'Começar',
                 icon: 'smile',
                 nextScreen: 'EmotionSelect'
